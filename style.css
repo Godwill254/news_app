@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{ 
+    position: relative;
+}
+
+/* Global CSS */
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    background-color: #2d4c50;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.3);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.navbar .logo{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+#search-input{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+#search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size:18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#blog-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+
+/* Blog card styling */
+.blog-card{
+    width: 280px;
+    border: 1px solid #2d4650;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+}
+
+/* Hover effect on the blog card */
+.blog-card:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+/* Blog image styling */
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Blog title  */
+.blog-card h2{
+    color: #141414;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* Blog paragraph */
+.blog-card p{
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+@media(max-width: 500px){
+    /* Adding padding on the navbar  */
+    nav{
+        padding: 0 20px;
+    }
+
+    /* Reducing the size of the logo */
+    .navbar .logo{
+        font-size:1.8rem;
+    }
+
+    /* Reducing the size of the search box  */
+    #search-input{
+        width: 150px;
+        padding: 10px 10px;
+    }
+
+    /* making the blog card occupy the entire width  */
+    .blog-card{
+        width: 100%;
+    }
+    
+}
